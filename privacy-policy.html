@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — AI Chat to PDF</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@700;800&display=swap');
+
+    :root {
+      --bg: #fafaf8;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --border: #e5e5e0;
+      --accent: #1a1a1a;
+      --tag-bg: #f0f0ec;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Mono', monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      padding: 60px 24px 100px;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 36px;
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: -0.3px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: #3a3a3a;
+      margin-bottom: 12px;
+    }
+
+    .callout {
+      background: #f0f7e6;
+      border-left: 3px solid #7ab830;
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin: 20px 0;
+    }
+
+    .callout p {
+      color: #2d4a0e;
+      margin: 0;
+      font-size: 13px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--tag-bg);
+      color: var(--muted);
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-right: 4px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      padding: 6px 0;
+      padding-left: 18px;
+      position: relative;
+      color: #3a3a3a;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    .contact-block {
+      background: var(--tag-bg);
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+
+    .contact-block p { margin: 0; color: var(--muted); font-size: 13px; }
+    .contact-block a { color: var(--text); }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 11px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">AI Chat to PDF Chrome Extension &nbsp;·&nbsp; Last updated: January 2025</p>
+
+  <div class="callout">
+    <p><strong>Short version:</strong> This extension does not collect, store, transmit, or share any of your data. Everything stays on your device.</p>
+  </div>
+
+  <div class="section">
+    <h2>1. What this extension does</h2>
+    <p>AI Chat to PDF is a Chrome browser extension that reads the visible text content of AI chat conversations on supported platforms and converts them into a PDF document using your browser's built-in print functionality.</p>
+    <p>Supported platforms: <span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">Gemini</span><span class="tag">Perplexity</span></p>
+  </div>
+
+  <div class="section">
+    <h2>2. Data we collect</h2>
+    <p><strong>None.</strong></p>
+    <p>This extension does not collect, record, store, or transmit any personal data, conversation content, or usage information — to us or to any third party.</p>
+  </div>
+
+  <div class="section">
+    <h2>3. How the extension works</h2>
+    <ul>
+      <li>When you click the extension icon, it reads the text content of the current page directly in your browser.</li>
+      <li>That content is formatted and passed to a new browser window for printing.</li>
+      <li>The PDF is saved locally on your device via your browser's Save as PDF function.</li>
+      <li>No data is sent to any external server at any point.</li>
+      <li>No analytics, tracking pixels, or telemetry of any kind are included.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>4. Permissions explained</h2>
+    <p>The extension requests the following Chrome permissions:</p>
+    <ul>
+      <li><strong>activeTab</strong> — to read the content of the currently open AI chat tab when you click the extension icon. It cannot access any other tabs.</li>
+      <li><strong>scripting</strong> — to inject a small script that extracts message text from the page. This script runs only when you activate the extension.</li>
+      <li><strong>Host permissions</strong> (chatgpt.com, claude.ai, gemini.google.com, perplexity.ai) — to limit extension access to only these specific domains. It cannot run on any other website.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>5. Third-party services</h2>
+    <p>This extension does not integrate with, send data to, or rely on any third-party services, APIs, or analytics platforms.</p>
+  </div>
+
+  <div class="section">
+    <h2>6. Children's privacy</h2>
+    <p>This extension does not collect any data from anyone, including children under the age of 13.</p>
+  </div>
+
+  <div class="section">
+    <h2>7. Changes to this policy</h2>
+    <p>If this policy is updated, the "last updated" date at the top of this page will reflect the change. Continued use of the extension after any changes constitutes acceptance of the new policy.</p>
+  </div>
+
+  <div class="section">
+    <h2>8. Contact</h2>
+    <p>Questions about this privacy policy can be directed to:</p>
+    <div class="contact-block">
+      <p>AI Chat to PDF Extension<br/>
+      <a href="mailto:mbekgi4@email.com">mbekgi4@email.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    AI Chat to PDF &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; This extension is not affiliated with OpenAI, Anthropic, Google, or Perplexity AI.
+  </footer>
+
+</div>
+</body>
+</html>
